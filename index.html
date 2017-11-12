@@ -5,77 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Thank God It's Five - 5th Anniversary of Victory Meycauayan</title>
-</head>
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
-<style>
-    html, body{
-        margin: 0 0 0 0;
-        width: 100%;
-        height: 100%;
-    }
 
-    .valign{
-        display: inline-block;
-        height: 100%;
-        vertical-align: middle;
-        width: 100%;
-    }
-
-    .container{
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .tgif-logo{
-        text-align: center;
-        margin: 0 auto;
-        max-height: 600px;
-    }
-
-    .scale-down{
-        -moz-transform: scale(0.5);
-        -webkit-transform: scale(0.5);
-        -o-transform: scale(0.5);
-        -ms-transform: scale(0.5);
-        transform: scale(0.5);
-    }
-
-    .pattern{
-        display: block;
-        width: 300px;
-        height: 300px;
-        position: absolute;
-        background: url('img/patterns.png');
-        background-size: 100% 100%;
-    }
-
-    .bottom{
-        -moz-transform: rotate(180deg);
-        -webkit-transform: rotate(180deg);
-        -o-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-        transform: rotate(180deg);
-        bottom: 0;
-        right: 0;
-    }
-</style>
-
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <style>
+        html, body{
+            margin: 0 0 0 0;
+            width: 100%;
+            height: 100%;
+        }
     
-
-<script>
-    $(document).ready(function(){
-
-        $('.pattern').imagesLoaded( { background: true }, function() {
-            var timestamp = new Date().getTime();
-            $('.tgif-logo').attr("src", "img/logo.gif"+'?'+timestamp );
+        .valign{
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+            width: 100%;
+        }
+    
+        .container{
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+    
+        .tgif-logo{
+            text-align: center;
+            margin: 0 auto;
+            max-height: 600px;
+        }
+    
+        .scale-down{
+            -moz-transform: scale(0.5);
+            -webkit-transform: scale(0.5);
+            -o-transform: scale(0.5);
+            -ms-transform: scale(0.5);
+            transform: scale(0.5);
+        }
+    
+        .pattern{
+            display: block;
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            background: url('img/patterns.png');
+            background-size: 100% 100%;
+        }
+    
+        .bottom{
+            -moz-transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+    
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script>
+        
+    <script>
+        $(document).ready(function(){
+    
+            $('.pattern').imagesLoaded( { background: true }, function() {
+                var timestamp = new Date().getTime();
+                $('.tgif-logo').attr("src", "img/logo.gif"+'?'+timestamp );
+            });
         });
-    });
-
-
-</script>
+    
+    
+    </script>    
+</head>
 
 <body>
     <div class="pattern"></div>
