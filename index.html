@@ -69,7 +69,8 @@
     $(document).ready(function(){
 
         $('.pattern').imagesLoaded( { background: true }, function() {
-            $('.container').append('<img class="tgif-logo" src="img/logo.gif" alt="">');
+            var timestamp = new Date().getTime();
+            $('.tgif-logo').attr("src", "img/logo.gif"+'?'+timestamp );
         });
     });
 
@@ -81,8 +82,10 @@
     <div class="pattern bottom"></div>
     <div class="container">
         <span class="valign"></span>
-        
+        <img class="tgif-logo" src="img/logo.png" alt="">
     </div>
+
+
 
 
 </body>
