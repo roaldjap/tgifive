@@ -62,14 +62,26 @@
 </style>
 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script>
     
+
+<script>
+    $(document).ready(function(){
+
+        $('.pattern').imagesLoaded( { background: true }, function() {
+            $('.container').append('<img class="tgif-logo" src="img/logo.gif" alt="">');
+        });
+    });
+
+
+</script>
 
 <body>
     <div class="pattern"></div>
     <div class="pattern bottom"></div>
     <div class="container">
         <span class="valign"></span>
-        <img class="tgif-logo" src="img/logo.gif" alt="">
+        
     </div>
 
 
