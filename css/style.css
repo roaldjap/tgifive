@@ -63,6 +63,8 @@ html, body{
     max-width: 830px;
     margin: 10px auto;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 .details{
