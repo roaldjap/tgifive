@@ -51,10 +51,9 @@
                 var timestamp = new Date().getTime();
                 $('.tgif-logo').attr("src", "img/logo.gif"+'?'+timestamp );
 
-
                 $('#countdown').ClassyCountdown({
-                    end: '1512864000',
-                    now: '1510554970',
+                    end:  Math.round( new Date( 'Sun Dec 10 2017 00:00:00 GMT+0800' ).getTime() / 1000),
+                    now:  Math.round( new Date( ).getTime() / 1000),
                     labels: true,
                     style: {
                         element: "",
@@ -98,7 +97,8 @@
 
                     },
                     onEndCallback: function() {
-                        console.log("Thank God for His goodness and faithfulness!");
+                        console.log("Thank God for His goodness and faithfulness!" + $.now());
+
                     }
                 });
             });
