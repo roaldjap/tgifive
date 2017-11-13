@@ -1,0 +1,92 @@
+@import url("../font/stylesheet.css");
+
+html, body{
+    margin: 0 0 0 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Avenir Next', sans-serif;
+    color: #14488a;
+    display: table;
+}
+
+.valign{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+.tgif-logo{
+    text-align: center;
+    margin: 0 auto;
+    max-height: 230px;
+}
+
+.scale-down{
+    -moz-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+.pattern{
+    display: block;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background: url('../img/patterns.png');
+    background-size: 100% 100%;
+    z-index: -1;
+}
+
+.bottom{
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    bottom: 0;
+    right: 0;
+}
+
+.countdown-wrapper{
+    max-width: 830px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.details{
+    letter-spacing: 3px;
+    font-size: 12px;
+    line-height: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.details > span{
+    display: inline-block;
+    padding: 0 15px;
+    margin: 5px 0;
+    border-right: 1px solid #14488a;
+}
+
+.details > span:last-child{
+    display: inline-block;
+    padding-right: 0;
+    border-right: none;
+}
+
+.details > span:first-child{
+    display: inline-block;
+    padding-left: 0;
+}

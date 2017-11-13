@@ -23,74 +23,11 @@
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="css/jquery.classycountdown.css">
-
-    <style>
-        html, body{
-            margin: 0 0 0 0;
-            width: 100%;
-            height: 100%;
-        }
-    
-        .valign{
-            display: inline-block;
-            height: 100%;
-            vertical-align: middle;
-            width: 100%;
-        }
-    
-        .container{
-            width: 100%;
-            margin: 0 auto;
-            text-align: center;
-        }
-    
-        .tgif-logo{
-            text-align: center;
-            margin: 0 auto;
-            max-height: 230px;
-        }
-    
-        .scale-down{
-            -moz-transform: scale(0.5);
-            -webkit-transform: scale(0.5);
-            -o-transform: scale(0.5);
-            -ms-transform: scale(0.5);
-            transform: scale(0.5);
-        }
-    
-        .pattern{
-            display: block;
-            width: 300px;
-            height: 300px;
-            position: absolute;
-            background: url('img/patterns.png');
-            background-size: 100% 100%;
-            z-index: -1;
-        }
-    
-        .bottom{
-            -moz-transform: rotate(180deg);
-            -webkit-transform: rotate(180deg);
-            -o-transform: rotate(180deg);
-            -ms-transform: rotate(180deg);
-            transform: rotate(180deg);
-            bottom: 0;
-            right: 0;
-        }
-
-        .countdown-wrapper{
-            max-width: 1200px;
-            margin: 10px 100px;
-            text-align: center;
-        }
-
-        
-    </style>
+    <link rel="stylesheet" href="css/jquery.classycountdown.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
     
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/jquery-knob/dist/jquery.knob.min.js"></script>
-    <!-- <script src="bower_components/jquery.throttle/src/jquery-throttle.min.js"></script> -->
     <script src="js/jquery.throttle.js"></script>
     <script src="js/jquery.classycountdown.js"></script>
     <script src="bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script>
@@ -102,7 +39,7 @@
                 var timestamp = new Date().getTime();
                 $('.tgif-logo').attr("src", "img/logo.gif"+'?'+timestamp );
 
-                
+
                 $('#countdown').ClassyCountdown({
                     end: '1512864000',
                     now: '1510531200',
@@ -117,7 +54,7 @@
                                 fgColor: "#41b54e",
                                 lineCap: 'round'
                             },
-                            textCSS: 'font-family:\'Avenir Next\'; font-size:25px; font-weight:700; color:#14488a;'
+                            textCSS: 'font-family:\'Avenir Next\'; font-size:12px; font-weight:700; color:#14488a;'
                         },
                         hours: {
                             gauge: {
@@ -126,7 +63,7 @@
                                 fgColor: "#ebacce",
                                 lineCap: 'round'
                             },
-                            textCSS: 'font-family:\'Avenir Next\'; font-size:25px; font-weight:700; color:#14488a;'
+                            textCSS: 'font-family:\'Avenir Next\'; font-size:12px; font-weight:700; color:#14488a;'
                         },
                         minutes: {
                             gauge: {
@@ -135,7 +72,7 @@
                                 fgColor: "#8e44ad",
                                 lineCap: 'round'
                             },
-                            textCSS: 'font-family:\'Avenir Next\'; font-size:25px; font-weight:700; color:#14488a;'
+                            textCSS: 'font-family:\'Avenir Next\'; font-size:12px; font-weight:700; color:#14488a;'
                         },
                         seconds: {
                             gauge: {
@@ -144,7 +81,7 @@
                                 fgColor: "#f39c12",
                                 lineCap: 'round'
                             },
-                            textCSS: 'font-family:\'Avenir Next\'; font-size:25px; font-weight:700; color:#14488a;'
+                            textCSS: 'font-family:\'Avenir Next\'; font-size:12px; font-weight:700; color:#14488a;'
                         }
 
                     },
@@ -167,6 +104,7 @@
     <div class="container">
         <span class="valign"></span>
         <img class="tgif-logo" src="img/logo-spacer.png" alt="">
+        <p class="details"><span class="event">Victory Meycauayan's 5th Anniversary </span><span class="date">December 10, 2017</span><span class="place"> Novotel Manila Araneta Center</span></p>
         <div class="countdown-wrapper">
             <div id="countdown"></div>
         </div>
