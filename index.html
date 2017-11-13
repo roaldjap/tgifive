@@ -101,57 +101,60 @@
             $('.pattern').imagesLoaded( { background: true }, function() {
                 var timestamp = new Date().getTime();
                 $('.tgif-logo').attr("src", "img/logo.gif"+'?'+timestamp );
+
+                
+                $('#countdown').ClassyCountdown({
+                    end: '1512864000',
+                    now: '1510531200',
+                    labels: true,
+                    style: {
+                        element: "",
+                        textResponsive: .5,
+                        days: {
+                            gauge: {
+                                thickness: .05,
+                                bgColor: "rgba(0,0,0,0)",
+                                fgColor: "#41b54e",
+                                lineCap: 'round'
+                            },
+                            textCSS: 'font-family:\'Avenir Next\'; font-size:25px; font-weight:700; color:#14488a;'
+                        },
+                        hours: {
+                            gauge: {
+                                thickness: .05,
+                                bgColor: "rgba(0,0,0,0)",
+                                fgColor: "#ebacce",
+                                lineCap: 'round'
+                            },
+                            textCSS: 'font-family:\'Avenir Next\'; font-size:25px; font-weight:700; color:#14488a;'
+                        },
+                        minutes: {
+                            gauge: {
+                                thickness: .05,
+                                bgColor: "rgba(0,0,0,0)",
+                                fgColor: "#8e44ad",
+                                lineCap: 'round'
+                            },
+                            textCSS: 'font-family:\'Avenir Next\'; font-size:25px; font-weight:700; color:#14488a;'
+                        },
+                        seconds: {
+                            gauge: {
+                                thickness: .05,
+                                bgColor: "rgba(0,0,0,0)",
+                                fgColor: "#f39c12",
+                                lineCap: 'round'
+                            },
+                            textCSS: 'font-family:\'Avenir Next\'; font-size:25px; font-weight:700; color:#14488a;'
+                        }
+
+                    },
+                    onEndCallback: function() {
+                        console.log("Time out!");
+                    }
+                });
             });
 
-        $('#countdown').ClassyCountdown({
-            end: '1512864000',
-            now: '1510531200',
-            labels: true,
-            style: {
-                element: "",
-                textResponsive: .5,
-                days: {
-                    gauge: {
-                        thickness: .05,
-                        bgColor: "rgba(0,0,0,0)",
-                        fgColor: "#41b54e",
-                        lineCap: 'round'
-                    },
-                    textCSS: 'font-family:\'Avenir Next\'; font-size:25px; font-weight:700; color:#14488a;'
-                },
-                hours: {
-                    gauge: {
-                        thickness: .05,
-                        bgColor: "rgba(0,0,0,0)",
-                        fgColor: "#ebacce",
-                        lineCap: 'round'
-                    },
-                    textCSS: 'font-family:\'Avenir Next\'; font-size:25px; font-weight:700; color:#14488a;'
-                },
-                minutes: {
-                    gauge: {
-                        thickness: .05,
-                        bgColor: "rgba(0,0,0,0)",
-                        fgColor: "#8e44ad",
-                        lineCap: 'round'
-                    },
-                    textCSS: 'font-family:\'Avenir Next\'; font-size:25px; font-weight:700; color:#14488a;'
-                },
-                seconds: {
-                    gauge: {
-                        thickness: .05,
-                        bgColor: "rgba(0,0,0,0)",
-                        fgColor: "#f39c12",
-                        lineCap: 'round'
-                    },
-                    textCSS: 'font-family:\'Avenir Next\'; font-size:25px; font-weight:700; color:#14488a;'
-                }
-
-            },
-            onEndCallback: function() {
-                console.log("Time out!");
-            }
-        });
+        
         });
     
     
