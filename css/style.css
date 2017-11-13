@@ -90,3 +90,69 @@ html, body{
     display: inline-block;
     padding-left: 0;
 }
+
+
+ /* Large Devices, Wide Screens */
+ @media only screen and (max-width : 1200px) {
+    
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .countdown-wrapper{
+        max-width: 615px;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    .tgif-logo{
+        text-align: center;
+        margin: 0 auto;
+        max-height: 230px;
+    }
+    
+
+    .pattern{
+        width: 150px;
+        height: 150px;
+    }
+
+    .bottom{
+        width: 100px;
+        height: 100px;
+    }
+
+    .details{
+        font-size: .5em;
+        line-height: 1.5em;
+    }
+
+    .details > span{
+        border: none;
+        padding: none;
+    }
+}
+
+@media only screen and (max-width : 375px) {
+    .tgif-logo{
+        text-align: center;
+        margin: 0 auto;
+        max-height: 200px;
+    }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    .tgif-logo{
+        text-align: center;
+        margin: 0 auto;
+        max-height: 150px;
+    }
+}
+    
