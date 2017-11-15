@@ -85,6 +85,11 @@ html, body{
     letter-spacing: 3px;
 }
 
+.content-wrapper{
+    opacity: 0;
+}
+
+
 .details{
     letter-spacing: 3px;
     font-size: 12px;
