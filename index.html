@@ -37,6 +37,7 @@
 
     <link rel="stylesheet" href="css/jquery.classycountdown.css"/>
     <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+    <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="css/style.css"/>
     
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -51,7 +52,7 @@
             $('.pattern').imagesLoaded( { background: true }, function() {
                 var timestamp = new Date().getTime();
                 $('.tgif-logo').attr("src", "img/logo.gif"+'?'+timestamp );
-                $('.pattern').addClass('slide');
+                $('.pattern, .player').addClass('slide');
                 $('.content-wrapper').addClass("animated fadeInUp");
 
                 $('#countdown').ClassyCountdown({
@@ -104,6 +105,30 @@
 
                     }
                 });
+
+                var myaudio = new Audio('audio/audio-1.mp3');
+
+                myaudio.volume = 0.5;
+                myaudio.play();
+                myaudio.loop = true;
+
+                $('#mute-toggle').click(function(e) {
+                    e.preventDefault();
+                    
+                    if(myaudio.paused){
+                        myaudio.play();
+                        $(this).children('.icon').removeClass('ion-volume-mute');
+                        $(this).children('.icon').addClass('ion-volume-medium');
+                        console.log("play");
+                    } else{
+                        myaudio.pause();
+                        $(this).children('.icon').removeClass('ion-volume-medium');
+                        $(this).children('.icon').addClass('ion-volume-mute');
+
+                    }
+
+                });
+
             });
 
         
@@ -116,6 +141,12 @@
 <body>
     <div class="pattern top"></div>
     <div class="pattern bottom"></div>
+    <!-- player -->
+    <div class="player">
+            <a class="button" id="mute-toggle" href="" title=""><i class="icon ion-volume-medium"></i></a>            
+    </div>
+
+    <!-- content -->
     <div class="container">
         <span class="valign"></span>
         <img class="tgif-logo" src="img/logo-spacer.png" alt="">
