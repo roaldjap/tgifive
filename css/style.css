@@ -27,6 +27,7 @@ html, body{
 }
 
 .tgif-logo{
+    background: transparent;
     display: inline-block;
     text-align: center;
     margin: 0 auto;
