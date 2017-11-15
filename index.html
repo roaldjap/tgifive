@@ -36,6 +36,7 @@
     
 
     <link rel="stylesheet" href="css/jquery.classycountdown.css"/>
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
     <link rel="stylesheet" href="css/style.css"/>
     
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -50,6 +51,8 @@
             $('.pattern').imagesLoaded( { background: true }, function() {
                 var timestamp = new Date().getTime();
                 $('.tgif-logo').attr("src", "img/logo.gif"+'?'+timestamp );
+                $('.pattern').addClass('slide');
+                $('.content-wrapper').addClass("animated fadeInUp");
 
                 $('#countdown').ClassyCountdown({
                     end:  Math.round( new Date( 'Sun Dec 10 2017 00:00:00 GMT+0800' ).getTime() / 1000),
@@ -116,9 +119,11 @@
     <div class="container">
         <span class="valign"></span>
         <img class="tgif-logo" src="img/logo-spacer.png" alt="">
-        <p class="details"><span class="event">Victory Meycauayan's 5th Anniversary </span><span class="date">December 10, 2017</span><span class="place">Novotel Araneta Center Cubao, Q.C.</span></p>
-        <div class="countdown-wrapper">
-            <div id="countdown"></div>
+        <div class="content-wrapper">
+            <p class="details"><span class="event">Victory Meycauayan's 5th Anniversary </span><span class="date">December 10, 2017</span><span class="place">Novotel Araneta Center Cubao, Q.C.</span></p>
+            <div class="countdown-wrapper">
+                <div id="countdown"></div>
+            </div>
         </div>
         
     </div>

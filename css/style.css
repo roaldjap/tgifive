@@ -1,5 +1,6 @@
 @import url("../font/stylesheet.css");
 
+
 html, body{
     margin: 0 0 0 0;
     width: 100%;
@@ -56,7 +57,24 @@ html, body{
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
     bottom: 0;
+    right: -300px;
+    -webkit-transition: all 1s ease-in-out; /* Safari 3.1 to 6.0 */
+    transition: all 1s ease-in-out;
+}
+
+.bottom.slide{
     right: 0;
+    
+}
+
+.top{
+    left: -300px;
+    -webkit-transition: all 1s ease-in-out; /* Safari 3.1 to 6.0 */
+    transition: all 1s ease-in-out;
+}
+
+.top.slide{
+    left: 0;
 }
 
 .countdown-wrapper{
@@ -128,6 +146,26 @@ html, body{
     .bottom{
         width: 100px;
         height: 100px;
+    }
+
+    .top{
+        left: -150px;
+        -webkit-transition: all 1s ease-in-out; /* Safari 3.1 to 6.0 */
+        transition: all 1s ease-in-out;
+    }
+
+    .bottom{
+        right: -100px;
+        -webkit-transition: all 1s ease-in-out; /* Safari 3.1 to 6.0 */
+        transition: all 1s ease-in-out;
+    }
+
+    .top.slide{
+        left: 0;
+    }
+
+    .bottom.slide{
+        right: 0;
     }
 
     .details{
