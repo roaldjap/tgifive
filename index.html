@@ -183,7 +183,10 @@
             version    : '2.11'
           });
             
-          FB.AppEvents.logPageView();   
+          FB.ui({
+            method: 'pagetab',
+            redirect_uri: 'https://bit.do/TGIFive'
+          }, function(response){});
             
         };
       
