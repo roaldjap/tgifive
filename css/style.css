@@ -10,6 +10,10 @@ html, body{
     display: table;
 }
 
+body{
+    background: white;
+}
+
 .valign{
     display: inline-block;
     height: 100%;
@@ -155,6 +159,18 @@ html, body{
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
+
+}
+
+@media only screen and (max-width : 810px) {
+    .countdown-wrapper{
+        max-width: 600px;
+    }
+
+    .bottom{
+        width: 150px;
+        height: 150px;
+    }
 }
 
 /* Small Devices, Tablets */
