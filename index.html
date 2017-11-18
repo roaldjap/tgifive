@@ -48,6 +48,7 @@
         
     <script>
         $(document).ready(function(){
+            
             var isMobile = false; //initiate as false
             // device detection
             if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) 
@@ -146,7 +147,8 @@
         });
     
     
-    </script>    
+    </script>
+       
 </head>
 
 <body>
@@ -172,6 +174,26 @@
 
 
 
-
+    <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId      : '267319687124259',
+            cookie     : true,
+            xfbml      : true,
+            version    : '2.11'
+          });
+            
+          FB.AppEvents.logPageView();   
+            
+        };
+      
+        (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "https://connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+      </script>
 </body>
 </html>
