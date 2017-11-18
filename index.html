@@ -174,7 +174,7 @@
 
 
 
-    <script>
+    <!-- <script>
         window.fbAsyncInit = function() {
           FB.init({
             appId      : '267319687124259',
@@ -183,11 +183,8 @@
             version    : '2.11'
           });
             
-          FB.ui({
-            method: 'pagetab',
-            redirect_uri: 'https://bit.do/TGIFive'
-          }, function(response){});
-            
+          FB.AppEvents.logPageView();   
+          
         };
       
         (function(d, s, id){
@@ -197,6 +194,6 @@
            js.src = "https://connect.facebook.net/en_US/sdk.js";
            fjs.parentNode.insertBefore(js, fjs);
          }(document, 'script', 'facebook-jssdk'));
-      </script>
+      </script> -->
 </body>
 </html>
